@@ -1,0 +1,8 @@
+---
+- hosts : all
+  become : yes
+  tasks :
+   - name : i want to install mysql
+     apt : 
+      name : mysql-server
+      state : present
