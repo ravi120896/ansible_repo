@@ -6,3 +6,7 @@
      apt:
       name: apache2
       state: present
+      register: myresult
+  name: i want to debug
+  debug:
+   msg: "{{myresult}}"
